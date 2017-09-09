@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:'Microsoft YaHei';
+            background-color: #efefef;
+        }
+        .v_header{
+            width:100%;
+            background-color: #000;
+        }
+        .v_container{
+            width: 1200px;
+            margin:0 auto;
+        }
+        .v_nav_left a,.v_nav_right a{
+            display: inline-block;
+            padding:0 5px;
+            height:30px;
+            line-height:30px;
+            color:#fff;
+            font-size:12px;
+        }
+
+        .v_nav_wrap{
+            width:100%;
+            background-color: #fff;
+            -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+            -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+        }
+        .v_logo {
+            width:120px;
+            height:64px;
+            text-align:center;
+            line-height:64px;
+        }
+
+        .v_nav{
+            margin-left:10px;
+        }
+        .v_nav>li{
+            float:left;
+            height:64px;
+            padding:0 15px;
+            line-height:64px;
+        }
+        .v_nav>li>a{
+            display: block;
+            color:#333;
+            font-size:14px;
+        }
+
+        .v_main_wrap{
+            margin-top:30px;
+        }
+        .v_main_bg{
+            overflow: hidden;
+            border-radius:5px;
+            background-color: #fff;
+        }
+
+        .v_main_left{
+            width:840px;
+            margin:20px;
+            border-radius:5px;
+        }
+        .v_banner_wrap{
+            overflow: hidden;
+            border:1px solid #ddd;
+            border-radius:5px;
+            padding:15px;
+        }
+
+        .v_aside_right{
+            width:300px;
+            height:100px;
+            margin-top:20px;
+            background-color: deepskyblue;
+        }
+
+        .v_list_box{
+            margin-top:30px;
+        }
+
+        .v_list{
+            box-sizing:border-box;
+            margin:10px 0;
+            padding:10px 15px;
+            border:1px solid #ddd;
+            border-radius:5px;
+        }
+        .v_list_title{
+            overflow: hidden;
+            width:198px;
+            height:132px;
+            border-radius:5px;
+        }
+        .v_list_content{
+            position:relative;
+            width:588px;
+            height:132px;
+            margin-left:20px;
+        }
+        .v_list_content h2{
+            color:#333;
+            margin-bottom:6px;
+            font-weight:normal;
+            font-size:21px;
+        }
+        .v_list_content p{
+            overflow: hidden;
+            display: -webkit-box;
+            color: #898989;
+            line-height:1.4;
+            font-size:14px;
+            /*white-space: nowrap;*/
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+
+        }
+
+        .v_list_data{
+            position:absolute;
+            left:0;
+            bottom:0;
+            color:#748594;
+            font-size:12px;
+        }
+        .v_list_data span{
+            /*position:absolute;*/
+            margin-right:5px;
+        }
+        .v_list_data i{
+            margin-right:5px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<header class="v_header">
+    <div class="v_container clearfix" style="">
+        <div class="v_nav_left fl">
+            <a href="#">主页</a>
+            <a href="#">博客</a>
+        </div>
+        <div class="v_nav_right fr">
+            <a href="#">注册（邀请码）</a>
+            <a href="#">注册（登陆）</a>
+        </div>
+    </div>
+</header>
+<nav class="v_nav_wrap">
+    <div class="v_container clearfix">
+        <a href="#" class="v_logo fl">许则葵</a>
+        <ul class="v_nav fl">
+            <li>
+                <a href="#">前端技术</a>
+            </li>
+            <li>
+                <a href="#">互联网+</a>
+            </li>
+            <li>
+                <a href="#">旅行拍摄</a>
+            </li>
+            <li>
+                <a href="#">生活感悟</a>
+            </li>
+            <li>
+                <a href="#">装机必备</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="v_main_wrap">
+    <div class="v_container v_main_bg clearfix">
+        <div class="v_main_left fl">
+            <div class="v_banner_wrap">
+                <div class="v_banner_box">
+                    <img src="http://www.yunnanhaoli.com/skin/ecms/img/000002.jpg" width="100%" alt="">
+                </div>
+            </div>
+
+            <div class="v_list_box clearfix">
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v_list clearfix">
+                    <div class="v_list_title fl">
+                        <img src="http://dreamwq.com/wp-content/themes/xd/timthumb.php?src=http://dreamwq.com/wp-content/uploads/2017/07/sk.png&h=160&w=240&zc=1"
+                             alt="" width="100%">
+                    </div>
+                    <div class="v_list_content fl">
+                        <h2>烧烤日记</h2>
+                        <p>
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                            今天写一个下载页面的时候需要判断android或者ios设备以及不同的浏览器打开方式。 上网搜索了一下教程 发现这个教程最清晰简单，并且很好用。在此记......
+                        </p>
+                        <div class="v_list_data">
+                            <span><i class="fa fa-user-circle"></i>xzk</span>
+                            <span><i class="fa fa-calendar"></i>2017-09-08</span>
+                            <span><i class="fa fa-eye"></i>75次</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <aside class="v_aside_right fr">
+
+        </aside>
+    </div>
+</main>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./js/myTools.js"></script>
+<script>
+    var a = 0;
+    (function(){
+
+    })()
+
+</script>
+
+</body>
+</html>
